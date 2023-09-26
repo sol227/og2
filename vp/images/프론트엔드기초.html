@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/css/230925/layoutEx3.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>layoutEx3</title>
+  <style>
+    body{margin: 0; text-align: center; text-transform: capitalize;}
+    section {
+      width: 100%;
+      height: 100vh;
+      background: no-repeat 50% / cover;
+      position: sticky;
+      top: 0;
+    }
+    section h2{
+      width: 50%;
+      margin: 0 auto;
+      padding: 15px;
+      border-radius: 0 0 20px 20px;
+      font-size: 25px;
+      background-color: lightgoldenrodyellow;
+      color: rgb(94, 77, 56);
+    }
+    section:nth-child(1){background-image: url(./images/49997_91199_47.jpg);}
+    section:nth-child(2){background-image: url(./images/adorable-kitty-being-playful.jpg);}
+    section:nth-child(3){background-image: url(./images/adorable-kitty-looking-like-it-want-to-hunt.jpg);}
+    section:nth-child(4){background-image: url(./images/BIMGMM0000386036_20221116112438319509.jpg);}
+    section:nth-child(5){background-image: url(./images/closeup-shot-of-an-adorable-british-shorthair-cat-lying-on-the-floor.jpg);}
+
+
+  </style>
+</head>
+<body>
+  <section>
+   <h2>title1</h2>
+  </section>
+  <section>
+   <h2>title2</h2>
+  </section>
+  <section>
+   <h2>title3</h2>
+  </section>
+  <section>
+   <h2>title4</h2>
+  </section>
+  <section>
+   <h2>title5</h2>
+  </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
